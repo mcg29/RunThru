@@ -6,7 +6,7 @@ import os
 def runThru(dir, list):
 	dirList = os.listdir(dir)
 	for item in dirList:
-		item = dir + "/" + item #Here is what fixed it 
+		item = dir + "/" + item
 		#print item
 		list.append(item)
 		if (os.path.isdir(item)):
