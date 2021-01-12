@@ -3,7 +3,7 @@
 
 import os
 
-def runThru(dir, list):
+def runThru(dir, list=[]):
 	dirList = os.listdir(dir)
 	for item in dirList:
 		item = dir + "/" + item
