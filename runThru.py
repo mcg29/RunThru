@@ -7,9 +7,7 @@ def runThru(dir, list=[]):
 	dirList = os.listdir(dir)
 	for item in dirList:
 		item = os.path.join(dir, item)
-		#print item
 		list.append(item)
-		if (os.path.isdir(item)):
-			#print item + " is a directory. Running Through..."	
+		if (os.path.isdir(item)):	
 			runThru(item, list)	
 	return list #Return list of all files
